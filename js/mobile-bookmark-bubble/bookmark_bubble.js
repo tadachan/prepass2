@@ -586,7 +586,7 @@ google.bookmarkbubble.Bubble.prototype.build_ = function() {
   arrow.style.height = '19px';
   arrow.style.position = 'absolute';
   //arrow.style.left = '111px';
-  arrow.style.left = '100px';
+  arrow.style.left = '90px';
   if (isIpad) {
     arrow.style.WebkitTransform = 'rotate(180deg)';
     arrow.style.top = '-19px';
