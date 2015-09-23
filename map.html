@@ -29,14 +29,14 @@
         <script src="js/mobile-bookmark-bubble/bookmark_bubble.js"></script>
         <script src="js/mobile-bookmark-bubble/example/example.js"></script>
     </head>
-    <body>
+    <body onload="map_fit();">
         <!-- Make sure all your bars are the first things in your <body> -->
         <header class="bar bar-nav">
             <h1 class="title">現在地近くのプレパスが使えるスポット</h1>
         </header>
         <div class="content">
             <div id="loading" style="font-color:#ffffff">Now Loading....</div>
-            <div id="map_canvas" style="width:640px; height:600px"></div>
+            <div id="map_canvas" style="width:100%; height:480px;"></div>
         </div>
         <nav class="bar bar-tab">
             <a class="tab-item active" href="#">
@@ -51,3 +51,18 @@
         </nav>
     </body>
 </html>
+
+<script type="text/javascript">
+function map_fit(){
+	//ブラウザの縦サイズにフィットさせる
+	//上下に設置するdivサイズ計
+	var ajust = 95;
+	document.getElementById("map_canvas").style.height = (window.innerHeight - ajust) + "px";
+}
+
+//window risize 時の処理
+$(window).resize(function(){
+	map_fit();
+});
+
+</script>
