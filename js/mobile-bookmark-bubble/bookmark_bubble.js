@@ -564,7 +564,7 @@ google.bookmarkbubble.Bubble.prototype.build_ = function() {
         '<img src="img/common.png">（共有）をタップして<br><b>\'ホーム画面に追加\'</b>する';
   } else {
     bubbleInner.innerHTML = 'このwebアプリは、ホーム画面から起動できます！ <br><br>' +
-        '<img src="img/common.png">（共有）をタップして<br><b>\'ホーム画面に追加\する'</b>';
+        '<img src="img/common.png">（共有）をタップして<br><b>\'ホーム画面に追加\'</b>する';
   }
 
   var icon = document.createElement('div');
