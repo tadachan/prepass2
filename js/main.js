@@ -89,6 +89,9 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
         var latlng = new google.maps.LatLng(lat, lng);
         var marker = new google.maps.Marker({
             position:latlng,
+
+	    icon : "icons/red_pin.png",
+
             map: map
         });
 
