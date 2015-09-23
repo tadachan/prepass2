@@ -561,10 +561,10 @@ google.bookmarkbubble.Bubble.prototype.build_ = function() {
   // that is displayed in the menu of Mobile Safari.
   if (this.getIosVersion_() >= this.getVersion_(4, 2)) {
     bubbleInner.innerHTML = 'このwebアプリは、ホーム画面から起動できます！ <br><br>' +
-        '<img src="img/common.png"> をタップして <b>\'ホーム画面に追加\'</b>';
+        '<img src="img/common.png">（共有）をタップして<br><b>\'ホーム画面に追加\'</b>する';
   } else {
     bubbleInner.innerHTML = 'このwebアプリは、ホーム画面から起動できます！ <br><br>' +
-        '<img src="img/common.png"> をタップして <b>\'ホーム画面に追加\'</b>';
+        '<img src="img/common.png">（共有）をタップして<br><b>\'ホーム画面に追加\する'</b>';
   }
 
   var icon = document.createElement('div');
@@ -585,7 +585,7 @@ google.bookmarkbubble.Bubble.prototype.build_ = function() {
   arrow.style.height = '19px';
   arrow.style.position = 'absolute';
   //arrow.style.left = '111px';
-  arrow.style.left = '90px';
+  arrow.style.left = '92px';
   if (isIpad) {
     arrow.style.WebkitTransform = 'rotate(180deg)';
     arrow.style.top = '-19px';
